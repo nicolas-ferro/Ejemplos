@@ -1,0 +1,64 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 95% 70px; 
+}
+
+header img {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+header p {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#list {
+	margin: 20px;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 128px;
+  width: 128px;
+  position: fixed;
+  bottom: 90px;
+  right: 90px;
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(197, 197, 197, 0.8) url(../img/arrow-up.png) no-repeat;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: 1;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
