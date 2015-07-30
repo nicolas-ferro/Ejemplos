@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Piedra, Papel o Tijera</title>
+	<meta charset="utf-8" /> 
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 id="title">Piedra, Papel o Tijera</h1>
+	<div id="container">
+		<div class="options">
+				<input type="radio" name="user" id="Piedra" value="Piedra"><label for="Piedra"></label>
+				<input type="radio" name="user" id="Papel" value="Papel"><label for="Papel"></label>
+				<input type="radio" name="user" id="Tijera" value="Tijera"><label for="Tijera"></label>
+		</div>
+	</div>
+	<h2 id="resultado">Elegí Piedra, Papel o Tijera y hace click en el boton de "Jugar"</h2>
+	<div class="bar">
+		<p><span id="userScore">0</span> vs <span id="computerScore">0</span></p>
+		<button onclick="game()">Jugar</button>
+	</div>
+	
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
